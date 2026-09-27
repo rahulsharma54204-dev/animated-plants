@@ -1,0 +1,30 @@
+.productList {
+    width: 82%;
+    margin-left: 18%;
+    display: grid;
+    grid-template-columns: repeat(5, 17%);
+    /* column-gap: 40px; */
+    justify-content: space-evenly;
+    /* padding-left: 30px; */
+    /* padding-right: 0%; */
+    /* border: 1px solid red; */
+    /* border-left: 1px solid gray; */
+    /* position: absolute;
+    top: 16%; */
+}
+
+/* @media  (min-width: 1250) {
+        .productList {
+            width: 82%;
+            margin-left: 18%;   
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            justify-content: space-evenly;
+        }
+  } */
+
+  .loading {
+    position: absolute;
+    /* top: 30%; */
+    right: 15%;
+  }

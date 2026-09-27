@@ -1,0 +1,130 @@
+.main {
+    width: 96%;
+    margin: auto;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+    gap: 2%;
+}
+.images{
+    width: 60%;
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+.images img {
+    width: 100%;
+}
+.images img:hover {
+    scale: 1.1;
+    transition: 0.5s ease;
+}
+
+.details{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 2;
+}
+.details h3{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.divider {
+    width: 100%;
+    border: 0.5px solid gray;
+}
+/* .details {
+    color:#FF3E6C;
+} */
+.buttons {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+.buttons button {
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.cartAdd {
+    margin-top: 50px;
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    gap: 10%;
+}
+.cartAdd button:nth-child(1):disabled {
+    background-color: gray;
+}
+
+.cartAdd button:nth-child(1) {
+    font-size: 16px;
+    width: 60%;
+    height: 50px;
+    /* border: 1px solid red; */
+    background-color: #FF3E6C;
+    color: white;
+}
+
+.off_price {
+    text-decoration: line-through;
+    font-size: 15px;
+    color: gray;
+}
+
+.dis {
+    margin-left: 5px;
+    font-size: 15px;
+    color: #FF3E6C;
+}
+
+.wish {
+    width: 40%;
+    border: 1px solid black;
+}
+
+.discription {
+    color: black;
+
+}
+
+.opt {
+   text-align: left;
+    
+}
+
+@media screen and (min-width: 577px) and (max-width: 876px) {
+    
+    .images{
+        width: 40%;
+        border: 1px solid red; 
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    } 
+  
+ } 
+
+
+
+@media screen and (min-width: 336px) and (max-width: 576px) {
+    .images{
+        width: 50%;
+        /* border: 1px solid red; */
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+    .cartAdd button:nth-child(1){
+        font-size: 7px;
+    }
+    .cartAdd button {
+        font-size: 10px;
+    }
+}
